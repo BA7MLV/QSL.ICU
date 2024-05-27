@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotw已经寄了X天</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            padding: 10px;
+            font-size: 2em;
+        }
+        .memorial-image {
+    text-align: center; /* 确保包含块是居中的 */
+    margin-top: 20px; /* 根据需要添加上边距 */
+}
+
+.memorial-image img {
+    max-width: 100%; /* 设置图片最大宽度为100% */
+    height: auto; /* 保持图片的宽高比 */
+    border-radius: 10px; /* 添加圆角边框 */
+    filter: grayscale(100%); /* 将图片转换为黑白 */
+    display: inline-block; /* 使图片可以水平居中 */
+}
+        .memorial-text p {
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body onload="calculateDaysAndUpdateTitle()">
+    <div class="container">
+        <div class="header">
+            <h1>缅怀LoTW</h1>
+            <!-- 修正了h1标签的闭合 -->
+            <h1>已经离我们而去<span id="daysDifference">X</span>天了</h1>
+        </div>
+        <div class="memorial-image">
+            <!-- 请替换为您想要展示的图片 -->
+            <img src="http://www.arrl.org/img/333x220/exact/LoTW%20The%20ARRL%20R_1.jpg" alt="纪念图片">
+        </div>
+        <div class="memorial-text">
+            <h3>在这个特殊的时刻，我们缅怀LoTW网站，它曾经是我们HAM 通联中不可或缺的一部分。</h3>
+            <h3>LoTW是一个网络访问的数据库和存储库，使您能够提交业余无线电联系人（QSO）和确认（QSL）的电子日志。用户可以在线查看提交的QSO和生成的QSL。</h3>
+        </div>
+        <div class="footer">
+            <p>感谢您来此纪念，愿LoTW安息。</p>
+            <p>ARRL打复活赛中</p>
+        </div>
+    </div>
+    <script>
+        function calculateDaysAndUpdateTitle() {
+            var specificDate = new Date('2024-05-16'); 
+            var currentDate = new Date(); 
+            var timeDiff = Math.abs(currentDate - specificDate); 
+            var daysDifference = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)); 
+            document.title = "Lotw已经寄了" + daysDifference + "天";
+            document.getElementById('daysDifference').innerText = daysDifference;
+        }
+    </script>
+</body>
+</html>
