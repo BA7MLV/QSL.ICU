@@ -1,115 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotw已经寄了X天</title>
+    <title>LoTW 系统服务中断更新</title>
     <style>
         body {
-            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
-            cursor: pointer; /* 添加鼠标指针样式 */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            width: 80%;
-            margin: auto;
+            text-align: center;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
         }
         .header {
-            text-align: center;
             margin-bottom: 20px;
         }
-        .header h1 {
-            margin: 0;
-            padding: 10px;
-            font-size: 2em;
-        }
-        .memorial-image {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .memorial-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            filter: grayscale(100%);
-            display: inline-block;
-        }
-        .memorial-text p {
-            margin: 10px 0;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.8em;
-            color: #666;
-        }
-        .incense {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3em;
-            color: #8B4513; /* 上香的颜色 */
-            opacity: 0; /* 初始不可见 */
-            transition: opacity 0.5s ease-in-out; /* 淡入淡出效果 */
+        p {
+            margin: 15px 0;
         }
     </style>
 </head>
-<body onload="calculateDaysAndUpdateTitle()" onclick="showIncense()">
+<body>
     <div class="container">
         <div class="header">
-            <h1>缅怀LoTW</h1>
-            <h1>离我们而去<span id="daysDifference">X</span>天了</h1>
+            <h1>LoTW打赢复活赛啦</h1>
+            <h1>离我们而去47天后回归</h1>
                <h1>QSL.ICU</h1>
         </div>
-        <div class="memorial-image">
-            <img src="https://www.arrl.org/img/333x220/exact/LoTW%20The%20ARRL%20R_1.jpg" alt="纪念图片">
+        <img src="https://www.arrl.org/img/333x220/exact/LoTW%20The%20ARRL%20R_1.jpg" alt="纪念图片">
+        <div class="header">
+            <h1>ARRL 系统服务中断</h1>
+            <p>更新日期: 07/01/2024</p>
         </div>
-        <div class="memorial-text">
-            <h3>在这个特殊的时刻，我们缅怀LoTW网站，它曾经是我们HAM 通联中不可或缺的一部分。</h3>
-            <h3>LoTW是一个网络访问的数据库和存储库，使您能够提交业余无线电联系人（QSO）和确认（QSL）的电子日志。用户可以在线查看提交的QSO和生成的QSL。</h3>
-        </div>
-
-      <p>ARRL系统服务中断</p>
-<p>更新 6/21/2024</p>
-
-<p>ARRL工作人员继续与外部行业专家合作，确保所有服务器都已修复、测试，并且所有数据都已确认。</p>
-<p>我们还在努力确保网络的安全。</p>
-
-<p>正如之前更新中提到的，Logbook of The World®服务器和数据状况良好且正在运行。</p>
-<p>LoTW®依赖于其他服务器，例如会员数据，这些服务器尚未恢复服务。</p>
-<p>我们将宣布何时可以让用户访问LoTW。</p>
-<p>我们预计一旦上线，队列将会非常长，我们正在评估管理这一潜在问题的方法。</p>
-        <div class="footer">
-            <p>感谢您来此纪念,愿LoTW安息。</p>
-            <p>ARRL打复活赛中</p>
-            <p>点击屏幕给LoTW上香🕯️</p>
-        </div>
+        <p>从美国东部时间下午12:00/世界协调时下午16:00起，我们将恢复Logbook of The World® (LoTW®)的服务。</p>
+        <p>随着网络工作的进展，一些用户遇到了 LoTW 短暂打开的情况，在此期间上传了约 6600 份日志。这些日志直到本周末才得到处理，因为我们要测试 LoTW 的接口是否正常运行。</p>
+        <p>我们正在采取措施帮助管理可能大量涌入的日志。我们要求，如果您有大量的上传日志，可能是比赛或 DXpedition 的日志，请等待一两周再上传，以便 LoTW 有机会跟上。我们还实施了一项程序来拒绝过多重复的日志。请不要为了 "确保 "您的联系人都在 LoTW 中而上传您的全部日志，因为它们将被拒绝。</p>
+        <p>最后，请不要致电 ARRL 总部报告您在 LoTW 中遇到的问题。您可以通过 LoTW-help@arrl.org 联系支持人员。</p>
+        <p>在今年年底，您可能会遇到 LoTW 无法使用的计划时间。我们一直在利用这段时间来评估我们想对 LoTW 进行的操作和基础设施改进。这些时间将另行通知。</p>
+        <p>我们感谢您的耐心等待，因为我们一直在努力克服困难，使 LoTW 恢复服务。我们深知 LoTW 对我们的会员以及成千上万的非 ARRL 会员的 LoTW 用户的重要性。LoTW 仅次于 QST，是 ARRL 第二大最受欢迎的福利。</p>
+        <p>（由Ai翻译）</p>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=288838&auto=1&height=66"></iframe>
     </div>
-    <div class="incense">🕯️</div>
-    <script>
-        function calculateDaysAndUpdateTitle() {
-            var specificDate = new Date('2024-05-16');
-            var currentDate = new Date();
-            var timeDiff = Math.abs(currentDate - specificDate);
-            var daysDifference = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-            document.title = "Lotw已经寄了" + daysDifference + "天";
-            document.getElementById('daysDifference').innerText = daysDifference;
-        }
-
-        function showIncense() {
-            var incenseElement = document.querySelector('.incense');
-            incenseElement.style.opacity = '1'; 
-            setTimeout(function() {
-                incenseElement.style.opacity = '0'; 
-            }, 1000);
-        }
-    </script>
+    
 </body>
 </html>
-
