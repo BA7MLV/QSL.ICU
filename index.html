@@ -3,56 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoTW 系统服务中断更新</title>
+    <title>QSL.ICU - 即将上线</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            max-width: 800px;
-            margin: auto;
+        .logo-gradient {
+            background: linear-gradient(45deg, #FF7700, #FFA85B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradientShift 5s ease infinite;
+            background-size: 200% 200%;
         }
-        .header {
-            margin-bottom: 20px;
+        .construction-bar {
+            width: 300px;
+            height: 4px;
+            background: linear-gradient(90deg, #FF770033, #FFA85B 50%, #FF770033);
+            animation: progress 2s ease-in-out infinite;
         }
-        p {
-            margin: 15px 0;
+        @keyframes progress {
+            0% { background-position: -300px 0; }
+            100% { background-position: 300px 0; }
+        }
+        .background-pattern {
+            background: repeating-linear-gradient(
+                45deg,
+                #ffe4c433,
+                #ffe4c433 10px,
+                #ffd8aa33 10px,
+                #ffd8aa33 20px
+            );
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>LoTW打赢复活赛啦</h1>
-            <h1>离我们而去47天后回归</h1>
-               <h1>QSL.ICU</h1>
+<body class="h-screen bg-white flex flex-col items-center justify-center text-center background-pattern">
+    <div class="space-y-8 px-4">
+        <h1 class="text-7xl md:text-8xl font-bold logo-gradient" style="font-family: 'Poppins', sans-serif;">
+            QSL.ICU
+        </h1>
+        
+        <div class="space-y-6">
+            <div class="construction-bar rounded-full"></div>
+            
+            <div class="space-y-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">
+                    🚧 项目施工中
+                </h2>
+                <p class="text-gray-600 max-w-xl mx-auto leading-relaxed">
+                    我们正在精心打造全新体验，预计将在近期上线。<br>
+                    请保持关注，精彩即将呈现！
+                </p>
+            </div>
         </div>
-        <img src="https://www.arrl.org/img/333x220/exact/LoTW%20The%20ARRL%20R_1.jpg" alt="纪念图片">
-        <div class="header">
-            <h1>ARRL 系统服务中断</h1>
-            <p>更新日期: 07/01/2024</p>
+
+        <div class="mt-12 text-sm text-gray-400">
+            © 2025 QSL.ICU All rights reserved
         </div>
-        <p>从美国东部时间下午12:00/世界协调时下午16:00起，我们将恢复Logbook of The World® (LoTW®)的服务。</p>
-        <p>随着网络工作的进展，一些用户遇到了 LoTW 短暂打开的情况，在此期间上传了约 6600 份日志。这些日志直到本周末才得到处理，因为我们要测试 LoTW 的接口是否正常运行。</p>
-        <p>我们正在采取措施帮助管理可能大量涌入的日志。我们要求，如果您有大量的上传日志，可能是比赛或 DXpedition 的日志，请等待一两周再上传，以便 LoTW 有机会跟上。我们还实施了一项程序来拒绝过多重复的日志。请不要为了 "确保 "您的联系人都在 LoTW 中而上传您的全部日志，因为它们将被拒绝。</p>
-        <p>最后，请不要致电 ARRL 总部报告您在 LoTW 中遇到的问题。您可以通过 LoTW-help@arrl.org 联系支持人员。</p>
-        <p>在今年年底，您可能会遇到 LoTW 无法使用的计划时间。我们一直在利用这段时间来评估我们想对 LoTW 进行的操作和基础设施改进。这些时间将另行通知。</p>
-        <p>我们感谢您的耐心等待，因为我们一直在努力克服困难，使 LoTW 恢复服务。我们深知 LoTW 对我们的会员以及成千上万的非 ARRL 会员的 LoTW 用户的重要性。LoTW 仅次于 QST，是 ARRL 第二大最受欢迎的福利。</p>
-        <p>（由Ai翻译）</p>
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=288838&auto=1&height=66"></iframe>
     </div>
-    
 </body>
 </html>
